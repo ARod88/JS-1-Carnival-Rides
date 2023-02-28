@@ -38,6 +38,7 @@ ride3PowerOn = true
 
 //Ride 4 has power when:
     //ride wire is connected
+    
 ride4PowerOn = false
 //Ride 4 is a slot machine
     //if a 1 is rolled it should return "star"
@@ -49,4 +50,23 @@ ride4PowerOn = false
     //if a 7 is rolled it should return "seven"
 function ride4SlotMachine(rolledNumber){
     return "nothing"
+}
+
+switch (rolledNumber) {
+    case 1:
+         return "star"
+    case 2:
+        return "car"
+    case 3:
+        return "pot of gold"
+    case 4:
+        return "clover"
+    case 5:
+        return "bowling"
+    case 6:
+        return "tiger"
+    case 7:
+        return "seven"
+    default:
+        break;
 }
